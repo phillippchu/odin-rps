@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d0e7b34083.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">ROCK PAPER SCISSORS</h1>
+    </header>
+    <main class="main">
+      <div class="scoreboard">
+        <h2 class="score-intro" id="score-intro">Choose Your Weapon</h2>
+        <h3 class="score-rule" id="score-rule">First to 5 Wins</h3>
+        <div class="scores-container">
+          <div class="score-box">
+            <div class="sign" id="player-sign">
+              <i class="fa fa-question fa-5x"></i>
+            </div>
+            <p class="score" id="player-score">Player: 0</p>
+          </div>
+          <div class="score-box">
+            <div class="sign" id="computer-sign">
+              <i class="fa fa-question fa-5x"></i>
+            </div>
+            <p class="score" id="computer-score">Computer: 0</p>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="btn btn-square" id="rock-btn">
+          <div class="sign">
+            <i class="fas fa-hand-rock fa-8x"></i>
+          </div>
+        </button>
+        <button class="btn btn-square" id="paper-btn">
+          <div class="sign">
+            <i class="fas fa-hand-paper fa-8x"></i>
+          </div>
+        </button>
+        <button class="btn btn-square" id="scissors-btn">
+          <div class="sign">
+            <i class="fas fa-hand-scissors fa-8x"></i>
+          </div>
+        </button>
+      </div>
+    </main>
+    <div class="modal" id="endgame-modal">
+      <p class="modal-title" id="endgame-message"></p>
+      <button class="btn btn-restart" id="restart-btn">Play Again</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
